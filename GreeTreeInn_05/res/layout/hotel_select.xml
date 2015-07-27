@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/hotel_select_title"/>
+    
+    
+    <RadioGroup
+        android:id="@+id/select_radio"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/color_green"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="20dp" >
+
+        <RadioButton
+            android:id="@+id/select_radio_referee"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="@string/referee"
+            android:width="0dp" />
+
+        <RadioButton
+            android:id="@+id/select_radio_distance"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/distance"
+            android:width="0dp" />
+        
+        <RadioButton
+            android:id="@+id/select_radio_price"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/price_s"
+            android:width="0dp" />
+        <RadioButton
+            android:id="@+id/select_radio_score"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/score"
+            android:width="0dp" />
+        <RadioButton
+            android:id="@+id/select_radio_filter"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/filter"
+            android:width="0dp" />
+    </RadioGroup>
+    
+    <com.greetreeinn.view.DropDownListView 
+        android:id="@+id/select_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:divider="@null">
+        
+    </com.greetreeinn.view.DropDownListView>
+    
+    
+
+</LinearLayout>
+
+
+

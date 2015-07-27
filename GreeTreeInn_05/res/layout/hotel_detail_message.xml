@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/hotel_detail_title" />
+
+    <RelativeLayout
+        android:id="@+id/hotel_detail_page_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/hotel_detail_viewpage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/hotel_detail_view_point"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/hotel_message_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/hotel_name"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:background="@color/color_green" />
+
+        <LinearLayout
+            android:id="@+id/hotel_address_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/hotel_address"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:text="上海静安区格林豪泰酒店" />
+
+            <ImageView
+                android:id="@+id/hotel_detail_iv_to_right"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/toright" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_line_gray" />
+
+        <LinearLayout
+            android:id="@+id/hotel_service_ll"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center_vertical"
+                android:text="服务和荣誉:" />
+
+            <ImageView
+                android:id="@+id/hotel_detail_iv_wifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/hotel_detail_iv_breakfast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/hotel_detail_iv_park"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/color_line_gray" />
+
+        <RadioGroup
+            android:id="@+id/hotel_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="@color/color_green"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+
+            <RadioButton
+                android:id="@+id/hotel_radio_price"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_selector"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="房间价格"
+                android:width="0dp" />
+
+            <RadioButton
+                android:id="@+id/hotel_radio_desc"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="酒店介绍"
+                android:width="0dp" />
+
+            <RadioButton
+                android:id="@+id/hotel_radio_score"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_selector"
+                android:button="@null"
+                android:gravity="center"
+                android:text="酒店介绍"
+                android:width="0dp" />
+        </RadioGroup>
+
+        <FrameLayout
+            android:id="@+id/hotel_radio_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

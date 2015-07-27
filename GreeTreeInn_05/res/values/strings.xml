@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">格林豪泰</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+     <!-- 刷新 start -->
+    <string name="drop_down_list_header_default_text">点击刷新&#8230;</string>
+    <string name="drop_down_list_header_pull_text">下拉载入...&#8230;</string>
+    <string name="drop_down_list_header_release_text">放开加载...&#8230;</string>
+    <string name="drop_down_list_header_loading_text">正在载入...&#8230;</string>
+    <string name="drop_down_list_footer_default_text">点击加载更多内容...</string>
+    <string name="drop_down_list_footer_loading_text">正在加载...&#8230;</string>
+    <string name="drop_down_list_footer_no_more_text">没有可加载内容</string>
+    <string name="image_content">Image</string>
+    <string name="update_at">更新于:&#160;</string>
+    <!-- 刷新 end -->
+    
+    <!-- 首页 -->
+    <string name="all">全部</string>
+    <string name="please_key">请输入关键字</string>
+    <string name="from">来源:</string>
+    <string name="fabu">发布于:</string>
+    <string name="hotelselet">酒店搜索</string>
+    <string name="hotelcollect">常住/收藏</string>
+    <string name="hotelcollect_message">还没有任何收藏记录</string>
+    <string name="city">入住城市</string>
+    <string name="key">关键字</string>
+    <string name="time">入住时间</string>
+    <string name="day">入住天数</string>
+    <string name="filter">筛选</string>
+    <string name="referee">推荐</string>
+    <string name="distance">距离</string>
+    <string name="price_s"> 价格↑</string>
+    <string name="price_x"> 价格↓</string>
+    <string name="score">评分</string>
+    <string name="select">搜索</string>
+    <string name="near_select">附近</string>
+    <string name="score_foot">分/5分</string>
+    <string name="price_h">￥</string>
+    <string name="price_f">起</string>
+    
+
+</resources>

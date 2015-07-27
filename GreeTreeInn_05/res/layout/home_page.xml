@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 通过include加载其他布局 -->
+
+    <include layout="@layout/home_title" />
+
+    <RelativeLayout
+        android:id="@+id/home_page_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/homepage_viewpage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:id="@+id/home_view_point"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- 切换的Frgment导航 -->
+
+    <RadioGroup
+        android:id="@+id/home_radio"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/color_green"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="10dp" >
+
+        <RadioButton
+            android:id="@+id/home_page_radio_select"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_selector"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="酒店查询"
+            android:width="0dp" />
+
+        <RadioButton
+            android:id="@+id/home_page_radio_collect"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:background="@drawable/radio_button_selector"
+            android:button="@null"
+            android:gravity="center"
+            android:text="常住/收藏"
+            android:width="0dp" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/home_page_radio_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </FrameLayout>
+
+</LinearLayout>
